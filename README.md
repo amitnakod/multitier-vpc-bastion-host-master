@@ -124,7 +124,7 @@ defined in the site.yml playbook file.
 | name | description | type | required | default | sensitive |
 | ---------- | -------- | -------------- | ---------- | ----------- | ----------- |
 | ibm_region | Region of deployed VPC | string | |"us-south" |   |
-|  vpc_name  | Unique VPC name     | string | | "ssh-bastion-host"   |   |
+|  vpc_name  | Unique VPC name     | string | | "ssh-bastion-host1"   |   |
 |  resource_group_name | Name of IBM Cloud Resource Group used for all VPC resources | string | | "Default" |  |
 |  ssh_source_cidr_override |  User specified list of CIDR ranges requiring SSH access. When used with Schematics the default is to allow access only from Schematics, otherwise set to "0.0.0.0/0" | list(string) | | {{Schematics}}  |   |
 |  bastion_cidr | CIDR range for bastion subnets  |  string  | | "172.22.192.0/20"  |   |
